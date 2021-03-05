@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-firestore.js"></script>
+    <link rel="icon" href="firebase.png">
     <link rel="stylesheet" href="style.css" />
     <title>Firebase app</title>
   </head>
@@ -13,7 +14,11 @@
     <h1>Cloud Cafe</h1>
 
     <div class="content">
-      <form id="add-cafe-form"></form>
+      <form id="add-cafe-form">
+        <input type="text" name="name" placeholder="Enter cafe shop">
+        <input type="text" name="city" placeholder="Enter city">
+        <button>Add items</button>
+      </form>
       <ul id="cafe-list"></ul>
     </div>
     <script>
